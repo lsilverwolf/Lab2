@@ -36,27 +36,22 @@ public class NoteDetailActivity extends Activity {
         title.setText(fileName);
 
         SQLiteDatabase db = DbHelper.getReadableDatabase();
-        Log.d("Lyra", "I created a database helper");
 
-        Cursor c = db.rawQuery("select * from notes", null);
+        Cursor c = db.rawQuery("SELECT * FROM NOTES WHERE " + DatabaseHelper.COLUMN_TITLE + " LIKE "+ "'"+fileName +"';", null);
         Log.d("Lyra", "I made the cursor");
         List<String> listContents = new ArrayList<String>();
         List<String> listNames = new ArrayList<String>();
 
         c.moveToFirst();
-        Log.d("Lyra", "I'm looking at the first thing in the cursor");
         while (!c.isAfterLast()) {
             String itemContent = c.getString(
                     c.getColumnIndexOrThrow(DatabaseHelper.COLUMN_CONTENT));
-            Log.d("Lyra", "I'm looking at the content");
             String itemName = c.getString(
                     c.getColumnIndexOrThrow(DatabaseHelper.COLUMN_TITLE)
             );
-            Log.d("Lyra", "I'm looking at the title");
             listContents.add(itemContent);
             listNames.add(itemName);
             c.moveToNext();
-            Log.d("Lyra", "I'm moving through the cursor");
 
         }
         // Make sure to close the cursor

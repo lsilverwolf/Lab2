@@ -84,10 +84,10 @@
       <file leaf-file-name="NoteDetailActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="36" selection-start="2338" selection-end="2338" vertical-scroll-proportion="0.0" vertical-offset="444" max-vertical-offset="1260">
+            <state line="57" column="18" selection-start="1907" selection-end="1907" vertical-scroll-proportion="0.0" vertical-offset="309" max-vertical-offset="1185">
               <folding>
-                <element signature="e#1330#1338#0" expanded="true" />
-                <element signature="e#1388#1396#0" expanded="true" />
+                <element signature="e#1344#1352#0" expanded="true" />
+                <element signature="e#1402#1410#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,7 +96,7 @@
       <file leaf-file-name="NoteListAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteListAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="30" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="690">
+            <state line="19" column="30" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="690">
               <folding />
             </state>
           </provider>
@@ -105,16 +105,7 @@
       <file leaf-file-name="DatabaseHelper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="62" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="840">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FeedReaderContract.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/FeedReaderContract.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="58" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+            <state line="43" column="39" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
               <folding />
             </state>
           </provider>
@@ -123,7 +114,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="65" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.5102041" vertical-offset="30" max-vertical-offset="1500">
+            <state line="74" column="46" selection-start="2576" selection-end="2576" vertical-scroll-proportion="0.63038546" vertical-offset="532" max-vertical-offset="1470">
               <folding />
             </state>
           </provider>
@@ -156,9 +147,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/Comment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/ListItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/CommentsDataSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteDetailActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -493,13 +484,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/FeedReaderContract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="58" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="20" selection-start="1689" selection-end="1689" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1815">
@@ -595,10 +579,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/FeedReaderContract.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="58" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <folding />
+        <state line="57" column="18" selection-start="1907" selection-end="1907" vertical-scroll-proportion="0.0" vertical-offset="309" max-vertical-offset="1185">
+          <folding>
+            <element signature="e#1344#1352#0" expanded="true" />
+            <element signature="e#1402#1410#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -611,24 +598,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/DatabaseHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="62" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.0" vertical-offset="279" max-vertical-offset="840">
+        <state line="43" column="39" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="36" selection-start="2338" selection-end="2338" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1260">
-          <folding>
-            <element signature="e#1330#1338#0" expanded="true" />
-            <element signature="e#1388#1396#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="65" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.5102041" vertical-offset="30" max-vertical-offset="1500">
+        <state line="74" column="46" selection-start="2576" selection-end="2576" vertical-scroll-proportion="0.63038546" vertical-offset="532" max-vertical-offset="1470">
           <folding />
         </state>
       </provider>

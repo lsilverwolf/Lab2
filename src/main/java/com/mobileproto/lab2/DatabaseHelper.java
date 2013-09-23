@@ -27,14 +27,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        Log.d("Lyra", "I'm in the database helper");
     }
 
 
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(SQL_CREATE_ENTRIES);
-        Log.d("Lyra", "The table is recreated");
     }
 
     private static final String SQL_DELETE_ENTRIES =
@@ -44,9 +42,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL(SQL_DELETE_ENTRIES);
-        Log.d("Lyra", "I deleted the old database");
         onCreate(db);
-        Log.d("Lyra", "I called oncreate");
     }
 
 }

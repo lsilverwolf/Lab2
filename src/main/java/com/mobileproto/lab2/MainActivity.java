@@ -33,6 +33,7 @@ public class MainActivity extends Activity {
 
 
         final TextView note = (TextView) findViewById(R.id.noteField);
+        this.deleteDatabase("NotesDatabase.db");
         final DatabaseHelper DbHelper = new DatabaseHelper(this);
 
 
@@ -49,7 +50,6 @@ public class MainActivity extends Activity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("Lyra", "The save button was pressed");
                 String fileName = title.getText().toString();
                 String noteText = note.getText().toString();
 
@@ -60,9 +60,7 @@ public class MainActivity extends Activity {
                     // Create a new map of values, where column names are the keys
                     ContentValues values = new ContentValues();
                     values.put(DatabaseHelper.COLUMN_TITLE, fileName);
-                    Log.d("Lyra", "I put the title in the database");
                     values.put(DatabaseHelper.COLUMN_CONTENT, noteText);
-                    Log.d("Lyra", "I put the content in the database");
 
                     // Insert the new row, returning the primary key value of the new row
 
