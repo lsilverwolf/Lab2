@@ -1,7 +1,9 @@
 package com.mobileproto.lab2;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
@@ -20,6 +22,8 @@ import java.util.List;
 
 public class MainActivity extends Activity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +33,7 @@ public class MainActivity extends Activity {
 
 
         final TextView note = (TextView) findViewById(R.id.noteField);
+        final DatabaseHelper DbHelper = new DatabaseHelper(this);
 
 
         List<String> files = new ArrayList<String>(Arrays.asList(fileList()));
@@ -39,17 +44,39 @@ public class MainActivity extends Activity {
 
         notes.setAdapter(aa);
 
-
-
         Button save = (Button)findViewById(R.id.saveButton);
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.d("Lyra", "The save button was pressed");
                 String fileName = title.getText().toString();
                 String noteText = note.getText().toString();
+
                 if (fileName != null && noteText != null){
-                    try{
+
+                    // Gets the data repository in write mode
+                    SQLiteDatabase db = DbHelper.getWritableDatabase();
+                    // Create a new map of values, where column names are the keys
+                    ContentValues values = new ContentValues();
+                    values.put(DatabaseHelper.COLUMN_TITLE, fileName);
+                    Log.d("Lyra", "I put the title in the database");
+                    values.put(DatabaseHelper.COLUMN_CONTENT, noteText);
+                    Log.d("Lyra", "I put the content in the database");
+
+                    // Insert the new row, returning the primary key value of the new row
+
+                    long newRowId = db.insert(
+                            DatabaseHelper.TABLE_NOTES,
+                            null,
+                            values);
+
+                    title.setText("");
+                    note.setText("");
+                    aa.insert(fileName,0);
+                    aa.notifyDataSetChanged();
+
+                    /*try{
                         FileOutputStream fos = openFileOutput(fileName, Context.MODE_PRIVATE);
                         fos.write(noteText.getBytes());
                         fos.close();
@@ -59,7 +86,7 @@ public class MainActivity extends Activity {
                         aa.notifyDataSetChanged();
                     }catch (IOException e){
                         Log.e("IOException", e.getMessage());
-                    }
+                    }*/
                 }
             }
         });
@@ -86,5 +113,6 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-    
+
+
 }
